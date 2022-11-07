@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link href="style/style.css" rel="stylesheet"/>
+
+  <!--  fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Exo:wght@700&family=Fira+Sans+Extra+Condensed&family=IBM+Plex+Serif:wght@400;700&family=Inconsolata&family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+          <!-- Содержимое модального окна связаться  -->
+          <div id="connect-modal">
+            <div class="connect-modal-content">
+              <h3 class="connect-modal-header"> Молчание —  <span class="gold">Золото</span>.<br>Будете много молчать —<br><span class="blood">ограбят</span>!</h3>
+              <div class="connect-modal-body">
+                  <form class="connect-modal-form" action="index.html" method="post">
+                     <input required class="name-field connect-modal-form-input" type="text" id="name" placeholder="Введите ваше имя">
+                     <input required class="phone-field connect-modal-form-input" type="text" id="name" placeholder="Введите ваш телефон">
+                     <button class="modal-submit-button" type="submit">Оставить заявку</button>
+                  </form>
+              </div>
+              <p class="connect-modal-garanties">Гарантируется конфиденциальность ваших данных!</p>
+            </div>
+          </div>
+
+
+          <!-- Содержимое модального окна обо мне-->
+          <div id="aboutme-modal">
+            <div class="aboutme-modal-content">
+              <h3 class="aboutme-modal-header"><center><span class="gold">Кто я без своего</span> <span class="blood">костюма?!</span></center></h3>
+              <center><p class="aboutme-modal-subheader">Гений, миллиардер, плейбой, филантроп.</p></center>
+
+              <center>
+                <div class="aboutme-modal-body">
+                  <video  poster="img/me.png" height="350" width="350" controls="controls">
+                    <source src="videos/me.mov" type="video/mp4">
+                  </video>
+
+                  <ul class="aboutme-modal-list">
+                    <li class="aboutme-modal-list-item"><span class="gold">К</span> - <span class="blood">кре</span>а<span class="blood">ти</span>в<span class="blood">н</span>ый</li>
+                    <li class="aboutme-modal-list-item"><span class="blood">О</span> - ослепительный</li>
+                    <li class="aboutme-modal-list-item"><span class="gold">Л</span> - ловкий</li>
+                    <li class="aboutme-modal-list-item"><span class="blood">Я</span> - яркий</li>
+                  </ul>
+                </div>
+            </center>
+            </div>
+          </div>
+
+
+
+
+  <div class="wrapper">
+
+    <header class="header">
+      <img class="myphoto" src="img/myphoto.jpg" alt="myphoto">
+      <h1 class="title">Web Developer</h1>
+      <p class="subtitle">Nikolay Markeev</p>
+      <div class="header-buttons">
+        <button id="connect-btn" class="connect btn">Связаться</button>
+
+
+        <button id="aboutme-btn" class="about btn" href="#">Обо мне</button>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- <video src="videofile.ogg" autoplay poster="posterimage.jpg"> -->
+      <!-- </video> -->
+
+      <div class="skills-block">
+        <!-- Профессиональные навыки -->
+        <div class="skills-list-block">
+          <h2 class="skills-title">Профессиональные навыки:</h2>
+            <ul class="skills-list">
+              <li class="skills-list-item skills-list-item-active">Опыт работы с HTML5, CSS3, JS, PHP, SQL</li>
+              <li class="skills-list-item">Программирование на С++, C#, Java, Python</li>
+              <li class="skills-list-item">Владение Adobe Photoshop, After Effects, Premier Pro, Illustrator</li>
+              <li class="skills-list-item">Работа в Word, Excel, PowerPoint, Access</li>
+              <li class="skills-list-item">Анализ данных в STATISTICA, R Studio</li>
+            </ul>
+        </div>
+
+        <!-- Описание навыка -->
+        <div class="about-skills-block">
+          <ul class="about-skill-list active-skill">
+            <li>1</li>
+            <li>html</li>
+
+          </ul>
+
+          <ul class="about-skill-list">
+            <li>item1</li>
+            <li>it2</li>
+          </ul>
+
+          <ul class="about-skill-list">
+            <li>обработка фото, создание иллюстраций, протототипов и макетов для веб-дизайна, несложные анимации;</li>
+            <li>создание анимированной графики и визуальных эффектов, редактирование видеоряда</li>
+            <li>нелинейный видеомонатаж: редактирование видеофайлов любого формата, кадрирование, добавление анимаций и видеоэффектов, управление звуком</li>
+            <li>создание векторных изображений</li>
+          </ul>
+
+          <ul class="about-skill-list">
+            <li>cоздание и редактирование текста, статей, документов и деловых бумаг;</li>
+            <li>преобразование и анализ данных, визуализация информации и автоматизация вычислений;</li>
+            <li>создание презентаций для бизнеса, рекламной сферы, преподавательской и лекционной деятельности.</li>
+          </ul>
+
+          <ul class=about-skill-list>
+            <li>ITEM1</li>
+            <li>ITEM2</li>
+          </ul>
+
+        </div>
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <a class="footer-link" href="https://vk.com/markeev_tv" target="_blank"><img src="img/vk_logo.png" alt="vk"></a>
+      <a class="footer-link" href="https://t.me/markeev_nv" target="_blank"><img src="img/telegram_logo.png" alt="vk"></a>
+      <a class="footer-link" href="https://www.youtube.com/channel/UCOSaDDZx3N1Rk00OiY3U8pQ" target="_blank"><img src="img/youtube_logo.png" alt="vk"></a>
+    </footer>
+  </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
