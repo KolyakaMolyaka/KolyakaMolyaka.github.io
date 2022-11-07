@@ -1,0 +1,490 @@
+::-webkit-scrollbar {
+  width: 0;
+}
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* styles */
+html {
+  height: 100%;
+}
+
+
+body {
+  background-image: url("../img/background1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  position: relative;
+  z-index: 0;
+  height: 100%;
+}
+
+body::after {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: rgba(0,0,0,.6);
+   z-index: 0;
+ }
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+}
+
+/* layout */
+.header {
+  z-index: 1;
+  flex: 0 0 auto;
+}
+
+.main {
+  z-index: 1;
+  flex: 1 0 auto;
+}
+
+.footer {
+  z-index: 1;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/* end layout */
+
+/* main styles*/
+.header {
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+}
+.footer {
+  margin: 30px 0 30px 0;
+}
+.footer-link {
+  margin-right: 30px;
+}
+.footer-link:last-child {
+  margin-right: 0px;
+}
+
+.myphoto {
+  display: inline-block;
+  border-radius: 50%;
+  height: 285px;
+  width: 285px;
+}
+
+.title {
+  text-transform: uppercase;
+  font-family: 'Exo', sans-serif;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.subtitle {
+  font-family: 'DotGothic16', sans-serif;
+  font-size: 48px;
+  line-height: 48px;
+  color: white;
+  margin-bottom: 18px;
+  /* line-height: 42px; */
+}
+
+.btn {
+  background-color: #F9C408;
+  color: #363636;
+  border-radius: 18px;
+  display: inline-block;
+  width: 280px;
+  /* padding: 8px 57px; */
+  cursor: pointer;
+  font-family: 'Lobster', cursive;
+  font-size: 48px;
+  margin-right: 16px;
+}
+.btn:last-child {
+  margin-right: 0px;
+}
+
+/* skills styles */
+.skills-block {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.skills-list-block {
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 18px;
+}
+
+.skills-title {
+  position: relative;
+  margin-bottom: 20px;
+}
+.skills-title::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 420px;
+  height: 1px;
+  background-color: white;
+}
+
+
+.skills-list-item {
+  margin-top: 5px;
+  font-size: 16px;
+  list-style: url("../img/list-item.png") inside;
+}
+
+.skills-list-item:hover {
+  cursor: pointer;
+  /* font-size: 18px; */
+  font-style: italic;
+}
+
+.skills-list-item-active {
+  color: #FFE260;
+  list-style: url("../img/active-list-item.png") inside;
+  font-weight: bold;
+}
+
+
+.skills-list-item:first-child {
+  margin-top: 0px;
+}
+
+.about-skills-block {
+  position: relative;
+  display: block;
+  width: 590px;
+  height: 200px;
+  padding: 15px;
+  background-color: #212120;
+  border-radius: 23px;
+  text-align: justify;
+  margin-left: 15px;
+  margin-top: 20px;
+  box-shadow: 1px 3px 23px 4px rgba(255, 255, 255, 0.21);
+}
+
+
+.about-skills-block::before{
+  z-index: -1;
+  content: '';
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  width: 590px;
+  height: 200px;
+  background-color: #30302F;
+  border-radius: 23px;
+  box-shadow: 1px 3px 23px 4px rgba(255, 255, 255, 0.21);
+}
+
+
+.about-skill-list {
+  display: none;
+}
+.active-skill {
+  display: block;
+  position: relative;
+  font-family: 'Inconsolata', serif;
+  font-size: 20px;
+  line-height: 21px;
+}
+
+/* modals */
+.gold {
+  color: #FFE260;
+}
+.blood {
+  color: #FF6960;
+}
+
+#connect-modal {
+  z-index: 2;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0 ,0 ,0 , .7);
+
+}
+
+.connect-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 29px;
+  box-shadow: 0px 0px 150px rgba(255, 255, 255, 0.25);
+  background-color: #212120;
+  width: 440px;
+  height: 650px;
+}
+
+.connect-modal-header {
+  margin: 50px 20px;
+  font-size: 38px;
+  font-family: 'Fira Sans Extra Condensed';
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.connect-modal-body {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+}
+.connect-modal-form {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+}
+
+.connect-modal-form-input {
+  position: relative;
+  font-family: 'Fira Sans Extra Condensed';
+  outline: none;
+  font-size: 24px;
+  margin-bottom: 27px;
+  padding: 25px 110px 30px 25px;
+  width: 100%;
+  border: none;
+}
+
+.connect-modal-form-input:last-child{
+  margin-bottom: 0px;
+  padding: 0;
+}
+
+
+.name-field.connect-modal-form-input{
+  border-radius: 20px 0px 0px 0px;
+}
+
+.phone-field.connect-modal-form-input{
+  border-radius: 0px 0px 20px 0px;
+}
+
+
+.modal-submit-button {
+  font-family: 'Fira Sans Extra Condensed';
+  font-size: 48px;
+  width: 370px;
+  height: 70px;
+  background-color: #F4B60A;
+  color: #4E4E4C;
+  text-transform: uppercase;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.connect-modal-garanties {
+  font-size: 13px;
+  color: #666668;
+  text-align: center;
+}
+
+
+/* about me modal */
+
+#aboutme-modal {
+  z-index: 2;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0 ,0 ,0 , .7);
+
+}
+
+.aboutme-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 29px;
+  box-shadow: 0px 0px 150px rgba(255, 255, 255, 0.25);
+  background-color: #212120;
+  width: 480px;
+  height: 650px;
+}
+
+.aboutme-modal-header {
+  margin: 50px 20px 10px 20px;
+  font-size: 38px;
+  font-family: 'Fira Sans Extra Condensed';
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.aboutme-modal-subheader {
+  text-decoration: line-through;
+  font-size: 14px;
+  color: #666668;
+}
+
+.aboutme-modal-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.aboutme-modal-body video {
+  display:block;
+  width: 100%;
+}
+
+.aboutme-modal-list {
+
+}
+
+.aboutme-modal-list-item {
+      font-family: 'Fira Sans Extra Condensed';
+      font-weight: 400;
+      font-size: 20px;
+
+}
+
+
+@media (max-width: 1250px) {
+  .wrapper {
+    width: 1024px;
+  }
+  .about-skills-block::before{
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 1065px) {
+  .wrapper {
+    width: 768px;
+  }
+  .skills-list-block {
+    /* margin-bottom: 30px;  */
+  }
+
+  .skills-block {
+    flex-direction: column;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    margin-bottom: 30px;
+  }
+  body {
+    /* background-repeat: repeat-y; */
+  }
+
+}
+
+@media (max-width: 760px) {
+  .wrapper {
+    width: 425px;
+  }
+  .about-skills-block {
+    margin-top: 0px;
+  }
+  .footer {margin:0px;}
+}
+
+
+@media (max-width: 375px) {
+  .header-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+}
