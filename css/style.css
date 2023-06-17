@@ -206,6 +206,15 @@ h2 {
     margin-bottom: 58px;
 }
 
+/* Section footer */
+
+.footer__title {
+    padding: 28px 0 14px;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
 
 
 
