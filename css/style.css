@@ -51,3 +51,31 @@ header {
     text-decoration: none;
     color: black;
 }
+
+/* Section take your time */
+#take_your_time_section {
+      background-image: url("../imgs/take_your_time_section_img.png");
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat no-repeat;
+      height: 622px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    padding-top: 267px;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    height: 10px;
+    width: 80px;
+    background-color:#817070;
+
+}
+
