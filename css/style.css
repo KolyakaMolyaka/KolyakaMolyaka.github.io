@@ -2,6 +2,8 @@
     font-weight: 500px;
     font-size: 36px;
     text-align: center;
+    padding: 60px 0;
+    text-transform: uppercase;
 }
 
 * {
@@ -10,7 +12,6 @@
 }
 html {
     font-size: 24px;
-    text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
 }
@@ -34,10 +35,12 @@ header {
 .header__logo {
     font-weight: 500;
     opacity: .2;
+    text-transform: uppercase;
 }
 
 
 .header__navigation {
+    text-transform: uppercase;
 }
 
 .header__navigation-menu {
@@ -73,6 +76,7 @@ h1 {
     color: white;
     text-align: center;
     padding-top: 267px;
+    text-transform: uppercase;
 }
 
 h1::after {
@@ -86,7 +90,6 @@ h1::after {
 
 /* Section story */
 h2 {
-    margin: 60px;
 }
 
 .story_section__content {
@@ -106,3 +109,47 @@ h2 {
     font-weight: 300px;
     font-size: 20px;
 }
+
+/* Section blog */
+#blog_section {
+    background-color: #efefef;
+}
+
+.blog_section__content {
+    display: flex;
+    justify-content: center;
+}
+
+.blog_section__content-card {
+    display: inline-flex;
+    flex-direction: column;
+    background: white;
+    padding: 20px;
+    margin-left: 70px;
+    margin-bottom: 65px;
+}
+.blog_section__content-card:first-child {
+    margin-left: 0px;
+}
+
+.blog_section__content-card-title {
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.blog_section__content-card-img {
+    width: 325px;
+    height: 216px;
+    margin-bottom: 24px;
+}
+
+.blog_section__content-card-subtitle {
+    display: inline-block;
+    width: 325px;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 26px;
+}
+
+
