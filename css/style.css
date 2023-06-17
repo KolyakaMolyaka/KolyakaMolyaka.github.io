@@ -152,4 +152,60 @@ h2 {
     margin-bottom: 26px;
 }
 
+/* Section subscribe */
+#subscribe_section {
+    background-color: #817070;
+}
+
+.subscribe_section__title {
+    font-weight: 500;
+    font-size: 36px;
+    color: white;
+    text-transform: uppercase;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.subscribe_section-form-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe_section__form {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.subscribe_section__form-input {
+    background: transparent;
+    border: 3px solid white;
+    padding: 16px 93px;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 28px;
+}
+::placeholder {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.subscribe_section__form-button {
+    color: #817070;
+    background-color: white;
+    padding: 13px 34px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    border: none;
+    margin-bottom: 58px;
+}
+
+
+
 
